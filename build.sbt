@@ -8,5 +8,6 @@ lazy val root = project
 
     scalaVersion := scala3Version,
     topLevelDirectory := Some("cicdexample"),
+    Universal / packageName := "cicdexample",
     libraryDependencies += "org.scalameta" %% "munit" % "0.7.29" % Test
   ).enablePlugins(JavaAppPackaging)
